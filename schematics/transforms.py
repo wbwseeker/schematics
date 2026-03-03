@@ -2,6 +2,7 @@
 
 import collections
 import itertools
+from collections.abc import Set
 
 from six import iteritems
 
@@ -265,7 +266,7 @@ def allow_none(cls, field):
 # Field Filtering
 ###
 
-class Role(collections.Set):
+class Role(Set):
 
     """
     A ``Role`` object can be used to filter specific fields against a sequence.

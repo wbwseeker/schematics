@@ -10,7 +10,7 @@ except ImportError:  # pragma: no cover
 
 from .base import DateTimeType
 
-EPOCH = datetime.datetime.utcfromtimestamp(0).replace(tzinfo=tzutc())
+EPOCH = datetime.datetime.fromtimestamp(0, datetime.timezone.utc)
 
 
 class TimeStampType(DateTimeType):
